@@ -10,12 +10,25 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var WIndow : UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
+        
+        
         return true
     }
+
+    func applicationWillResignActive(_ application: UIApplication) {
+        print("App went to the background")
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        print("appliction did enter background")
+    }
+    
 
     // MARK: UISceneSession Lifecycle
 
@@ -31,6 +44,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        print("App Is terminated")
+        
+        
+    }
 
 }
 
