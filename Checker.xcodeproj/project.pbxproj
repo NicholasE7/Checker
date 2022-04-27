@@ -14,6 +14,7 @@
 		5BA9CBC92817DAFC00FB6E54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BA9CBC82817DAFC00FB6E54 /* Assets.xcassets */; };
 		5BA9CBCC2817DAFC00FB6E54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA9CBCA2817DAFC00FB6E54 /* LaunchScreen.storyboard */; };
 		5BA9CBDB28191C0F00FB6E54 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BA9CBD928191C0F00FB6E54 /* DataModel.xcdatamodeld */; };
+		5BA9CC462819529200FB6E54 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA9CC452819529200FB6E54 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5BA9CBCB2817DAFC00FB6E54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BA9CBCD2817DAFC00FB6E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BA9CBDA28191C0F00FB6E54 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		5BA9CC452819529200FB6E54 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		5BA9CBD82818111C00FB6E54 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5BA9CC452819529200FB6E54 /* CategoryViewController.swift */,
 				5BA9CBC32817DAFA00FB6E54 /* ToDoViewController.swift */,
 			);
 			path = Controllers;
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA9CC462819529200FB6E54 /* CategoryViewController.swift in Sources */,
 				5BA9CBDB28191C0F00FB6E54 /* DataModel.xcdatamodeld in Sources */,
 				5BA9CBC42817DAFA00FB6E54 /* ToDoViewController.swift in Sources */,
 				5BA9CBC02817DAFA00FB6E54 /* AppDelegate.swift in Sources */,

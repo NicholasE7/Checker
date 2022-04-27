@@ -9,6 +9,44 @@
     </dependencies>
     <scenes>
         <!--Checker-->
+        <scene sceneID="yLw-qs-4hF">
+            <objects>
+                <tableViewController id="u69-p5-Kgc" customClass="CategoryViewController" customModule="Checker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="d0e-7b-WMe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="rOB-H3-N6o">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rOB-H3-N6o" id="RWS-8u-A54">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="u69-p5-Kgc" id="15o-3n-g7D"/>
+                            <outlet property="delegate" destination="u69-p5-Kgc" id="6qa-yV-lo2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Checker" id="KNi-1b-uhe">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zA4-S9-tTb">
+                            <connections>
+                                <action selector="AddButtonPressed:" destination="u69-p5-Kgc" id="jsh-h1-GrK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="m3J-Yc-UDj" kind="show" identifier="GoToItems" id="jJJ-6X-QEh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bKu-E0-6Du" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3668" y="36"/>
+        </scene>
+        <!--Items-->
         <scene sceneID="M52-bL-fwZ">
             <objects>
                 <tableViewController id="m3J-Yc-UDj" customClass="ToDoViewConrtoller" customModule="Checker" customModuleProvider="target" sceneMemberID="viewController">
@@ -39,7 +77,7 @@
                             <outlet property="delegate" destination="m3J-Yc-UDj" id="5Ms-VC-LMq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Checker" id="389-Kj-esG">
+                    <navigationItem key="navigationItem" title="Items" id="389-Kj-esG">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="7mv-D6-Pfc">
                             <color key="tintColor" name="AccentColor"/>
                             <connections>
@@ -50,7 +88,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXM-Lr-yyZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3549.275362318841" y="43.526785714285715"/>
+            <point key="canvasLocation" x="4645" y="44"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8T5-b8-HPy">
@@ -69,7 +107,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="m3J-Yc-UDj" kind="relationship" relationship="rootViewController" id="nYA-AK-WNd"/>
+                        <segue destination="u69-p5-Kgc" kind="relationship" relationship="rootViewController" id="pwZ-Ol-flp"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lkW-Gx-QWG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
