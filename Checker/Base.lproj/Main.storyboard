@@ -33,8 +33,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Checker" id="KNi-1b-uhe">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zA4-S9-tTb">
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
-                                <action selector="AddButtonPressed:" destination="u69-p5-Kgc" id="jsh-h1-GrK"/>
+                                <action selector="AddButtonPressed:" destination="u69-p5-Kgc" id="ULW-iT-ilB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -99,7 +100,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" systemColor="tintColor"/>
-                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -107,7 +108,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="u69-p5-Kgc" kind="relationship" relationship="rootViewController" id="pwZ-Ol-flp"/>
+                        <segue destination="u69-p5-Kgc" kind="relationship" relationship="rootViewController" id="QAU-br-wha"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lkW-Gx-QWG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
